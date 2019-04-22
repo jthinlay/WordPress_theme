@@ -1,0 +1,300 @@
+/* 
+Theme Name: ThinlayTheme
+Author: Jampa Thinlay Tsarong
+Author URI: https://www.jtwebarchitect.com
+Version: 1.0 
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+a:link,
+a:visited {
+  color: #006ec3;
+}
+p {
+  line-height: 1.65em;
+}
+
+/* General Layout */
+div.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+article.post {
+  border-bottom: 2px dotted #bbbbbb;
+}
+article.post:last-of-type {
+  border-bottom: none;
+}
+
+/* Header */
+
+.site-header {
+  border-bottom: 2px solid rgb(207, 23, 23);
+}
+.site-header h1 {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.site-header h5 {
+  padding-top: 0px;
+  margin-top: 5px;
+}
+
+/* Navigation Style */
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+}
+.site-nav ul:before,
+.site-nav ul:after {
+  content: "";
+  display: table;
+}
+.site-nav ul:after {
+  clear: both;
+}
+.site-nav ul {
+  *zoom: 1;
+}
+.site-nav ul li {
+  list-style: none;
+  float: left;
+}
+/* Site Header Menu */
+.site-header nav ul li {
+  margin-right: 5px;
+}
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited {
+  display: block;
+  padding: 10px 18px;
+  border: 1px solid #bbb;
+  border-bottom: none;
+  text-decoration: none;
+}
+.site-header nav ul li a:hover {
+  background-color: #ececec;
+}
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited,
+.site-header nav ul li.current-page-ancestor a:link,
+.site-header nav ul li.current-page-ancestor a:visited {
+  color: #fff;
+  background-color: #006ec3;
+}
+
+/* Main Column Style */
+.main-column {
+  width: 66%;
+  float: left;
+}
+
+/* Side Column style */
+.secondary-column {
+  width: 30%;
+  float: right;
+}
+
+/* Footer Widget Area */
+.footer-widget-area {
+  padding: 10px 10px 10px 10px;
+  width: 25%;
+  float: left;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+/* Footer */
+.site-footer {
+  clear: both;
+  width: 100%;
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+  font-size: 84%;
+}
+.footerP {
+  text-align: center;
+}
+
+/* Footer Nav Menu */
+.site-nav {
+  margin-left: 5%;
+  width: 100%;
+  clear: both;
+}
+.site-nav li {
+  padding-left: 5px;
+}
+.site-footer nav {
+  margin: 30px 0 10px 0;
+}
+.site-footer nav ul li {
+  margin-right: 10px;
+  padding-right: 20px;
+  border-right: 1px dotted #bbb;
+}
+
+/* Single Page Layout */
+article.page h2 {
+  font-size: 300%;
+}
+
+/* Two column Title Layout */
+div.title-column {
+  width: 30%;
+  float: left;
+}
+div.text-column {
+  width: auto;
+}
+
+/* info box style */
+
+div.info-box {
+  width: 30%;
+  float: right;
+  margin: 0 0 30px 30px;
+  padding: 20px;
+  background-color: #eee;
+}
+div.info-box h4 {
+  margin-bottom: 6px;
+}
+div.info-box p {
+  font-size: 60%;
+}
+/* info box two style */
+div.info-box-two {
+  width: 30%;
+  float: right;
+  margin: 0 0 30px 30px;
+  padding: 20px;
+  background-color: #bcecac;
+}
+/* children links submenu */
+.children-links {
+  margin-bottom: 20px;
+  font-size: 80%;
+}
+.children-links a:link,
+.children-links a:visited {
+  text-decoration: none;
+}
+.children-links ul {
+  margin-top: 10px;
+}
+
+.children-links li {
+  margin-right: 20px;
+}
+
+.children-links .parent-link {
+  float: left;
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: 1px solid #ddd;
+  font-size: 120%;
+  font-weight: bold;
+}
+.children-links .parent-link a:link,
+.children-links .parent-link a:visited {
+  color: #333;
+}
+
+.children-links .current_page_item a:link,
+.children-links .current_page_item a:visited {
+  border-bottom: 1px solid #ddd;
+  color: #333;
+  cursor: default;
+}
+/* Post Styles */
+.post h2 {
+  margin-bottom: 0;
+}
+p.post-info {
+  font-size: 87%;
+  color: #999;
+}
+p.post-info a:link,
+p.post-info a:visited {
+  color: #999;
+}
+/* Archive Style */
+.archive-style {
+  color: #006ec3;
+}
+/* Image Style */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.has-thumbnail {
+  position: relative;
+  padding-left: 200px;
+}
+.post-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* hd-search style */
+div.hd-search {
+  float: right;
+}
+div.hd-search label {
+  position: absolute;
+  left: -9999px;
+}
+div.hd-search #searchsubmit {
+  background-color: #006ec3;
+  color: #fff;
+  padding: 5px 14px;
+  border: none;
+  vertical-align: top;
+}
+div.hd-search #s {
+  vertical-align: top;
+  padding: 3px;
+}
+
+.search-result h2 {
+  color: #006ec3;
+}
+/* Aside Style */
+
+article.post-aside {
+  font-size: 125%;
+  background-color: #fff5cb;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.mini-meta {
+  font-size: 68%;
+  margin: 0;
+  color: #777;
+}
+/* Post format Gallery Style */
+article.post-gallery {
+  width: 95%;
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+article.post-gallery img {
+  border: none !important;
+}
+article.post-gallery h2 {
+  text-align: center;
+}
