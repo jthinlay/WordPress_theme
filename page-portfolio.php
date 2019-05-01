@@ -15,6 +15,9 @@ if(have_posts()):
             <!-- text-column -->
             <div class="text-column">
                 <?php the_content(); ?>
+
+                <button id="portfolio-posts-btn">Load portfolio related blog posts</button>
+                <div id="portfolio-posts-container"></div>
             </div>
 
         </div>  

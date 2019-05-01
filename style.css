@@ -298,3 +298,23 @@ article.post-gallery img {
 article.post-gallery h2 {
   text-align: center;
 }
+/* Quick Add Form Styles */
+.admin-quick-add {
+  background-color: #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.admin-quick-add input,
+.admin-quick-add textarea {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  margin: 0 0 10px 0;
+  box-sizing: border-box;
+}
+#quick-add-button {
+  background-color: #006ec3;
+  padding: 3px 3px 3px 3px;
+  color: #fff;
+}

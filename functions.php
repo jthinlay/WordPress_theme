@@ -1,6 +1,12 @@
 <?php 
 function thinlaySpaceCode_resoures(){
     wp_enqueue_style('style', get_stylesheet_uri());
+    wp_enqueue_script('main_js', get_template_directory_uri() . '/js/main.js', NULL, 1.0, true);
+
+    wp_localize_script('main_js', 'magicalData', array(
+        'nonce' => wp_create_nonce('wp_rest'),
+        'siteURL' => get_site_url()
+    ));
 }
 add_action('wp_enqueue_scripts', 'thinlaySpaceCode_resoures');
 
